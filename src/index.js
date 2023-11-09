@@ -19,8 +19,15 @@ form.onsubmit = (event) => {event.preventDefault()}
 form.addEventListener('submit', async () => {
     let city = getCity(form);
     let data = await fetchAPI(baseURL, APIkey, city);
-    populatePage(box, form, data);
 
+    if(data.error){
+        alert('Please enter a valid city name')
+    }
+    else{
+        populatePage(box, form, data);
+    }
+    
+  
 
 
 })

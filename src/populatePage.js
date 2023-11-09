@@ -9,7 +9,7 @@ export function populatePage(box, form, data){
    
 
     let dataArray  = {location, tempC, tempF, condition};
-    console.log(dataArray);
+
 
     for(let key in dataArray){
         let p = document.createElement('p');

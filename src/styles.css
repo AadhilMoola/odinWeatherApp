@@ -46,3 +46,9 @@ body {
       margin-top: 1vw;
     }
   
+
+    .error{
+      color: red;
+      font-size: 1.5vw;
+      margin-top: 1vw;
+    }
